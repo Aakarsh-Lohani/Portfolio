@@ -1,3 +1,11 @@
+:root {
+    --primary-color: rgb(24, 104, 116);
+    --secondary-color: green;
+    --background-color: #f9f9f9;
+}
+
+
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
@@ -42,24 +50,29 @@ p {
 .intro {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black; /* Box around the whole intro */
+    border : 2px solid var(--primary-color);
+    margin : 10px;
+    padding: 10px;
+    border-radius: 5px;
     flex-wrap: wrap;
     background-color: #fff; /* White background color */
 }
 
 .text {
     flex: 3; /* This will take up 3/4 of the space */
-    border: 1px solid black; /* Box around the text */
+    border : 2px solid var(--secondary-color);
+    margin : 10px;
     padding: 10px;
-    margin: 10px;
+    border-radius: 5px;
     background-color: #f9f9f9; /* Light gray background color */
 }
 
 .photo {
     flex: 1; /* This will take up 1/4 of the space */
-    border: 1px solid black; /* Box around the photo */
+    border : 2px solid var(--secondary-color);
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
     background-color: #f9f9f9; /* Light gray background color */
 }
 
@@ -68,6 +81,32 @@ p {
     max-width: 200px;
     height: auto;
 }
+
+.socials{
+    border : 2px solid var(--primary-color);
+    margin : 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.experience{
+    border-radius: 5px;
+    border : 2px solid var(--primary-color);
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+.job{
+    border : 2px solid var(--secondary-color);
+    margin : 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
